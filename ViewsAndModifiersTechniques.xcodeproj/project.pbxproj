@@ -81,14 +81,12 @@
 		DA23502D2465F26100A82F1B /* ViewsAndModifiersTechniques */ = {
 			isa = PBXGroup;
 			children = (
+				DA2350552465F5E300A82F1B /* DataLayer */,
+				DA2350542465F5C100A82F1B /* Resources */,
+				DA2350532465F57400A82F1B /* ViewLayer */,
 				DA23502E2465F26100A82F1B /* AppDelegate.swift */,
 				DA2350302465F26100A82F1B /* SceneDelegate.swift */,
-				DA2350352465F26100A82F1B /* ContentView.swift */,
-				DA2350372465F26200A82F1B /* Assets.xcassets */,
-				DA23503C2465F26200A82F1B /* LaunchScreen.storyboard */,
 				DA23503F2465F26200A82F1B /* Info.plist */,
-				DA2350322465F26100A82F1B /* ViewsAndModifiersTechniques.xcdatamodeld */,
-				DA2350392465F26200A82F1B /* Preview Content */,
 			);
 			path = ViewsAndModifiersTechniques;
 			sourceTree = "<group>";
@@ -108,6 +106,32 @@
 				DA23504A2465F26200A82F1B /* Info.plist */,
 			);
 			path = ViewsAndModifiersTechniquesTests;
+			sourceTree = "<group>";
+		};
+		DA2350532465F57400A82F1B /* ViewLayer */ = {
+			isa = PBXGroup;
+			children = (
+				DA2350352465F26100A82F1B /* ContentView.swift */,
+				DA23503C2465F26200A82F1B /* LaunchScreen.storyboard */,
+			);
+			path = ViewLayer;
+			sourceTree = "<group>";
+		};
+		DA2350542465F5C100A82F1B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA2350392465F26200A82F1B /* Preview Content */,
+				DA2350372465F26200A82F1B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DA2350552465F5E300A82F1B /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				DA2350322465F26100A82F1B /* ViewsAndModifiersTechniques.xcdatamodeld */,
+			);
+			path = DataLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,7 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ViewsAndModifiersTechniques/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ViewsAndModifiersTechniques/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ViewsAndModifiersTechniques/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -386,7 +410,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ViewsAndModifiersTechniques/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ViewsAndModifiersTechniques/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ViewsAndModifiersTechniques/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
