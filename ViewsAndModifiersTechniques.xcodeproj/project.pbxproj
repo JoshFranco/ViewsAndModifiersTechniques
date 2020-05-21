@@ -15,6 +15,9 @@
 		DA23503B2465F26200A82F1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA23503A2465F26200A82F1B /* Preview Assets.xcassets */; };
 		DA23503E2465F26200A82F1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA23503C2465F26200A82F1B /* LaunchScreen.storyboard */; };
 		DA2350492465F26200A82F1B /* ViewsAndModifiersTechniquesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2350482465F26200A82F1B /* ViewsAndModifiersTechniquesTests.swift */; };
+		DA6471C424673D9E00DF931B /* BlueTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6471C324673D9E00DF931B /* BlueTitleStyle.swift */; };
+		DA6471C924674A4900DF931B /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DA6471C824674A4900DF931B /* SleepCalculator.mlmodel */; };
+		DAF917B2246C92A2009C52C7 /* CornerRotateModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF917B1246C92A2009C52C7 /* CornerRotateModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		DA2350442465F26200A82F1B /* ViewsAndModifiersTechniquesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewsAndModifiersTechniquesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA2350482465F26200A82F1B /* ViewsAndModifiersTechniquesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsAndModifiersTechniquesTests.swift; sourceTree = "<group>"; };
 		DA23504A2465F26200A82F1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA6471C324673D9E00DF931B /* BlueTitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueTitleStyle.swift; sourceTree = "<group>"; };
+		DA6471C824674A4900DF931B /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
+		DAF917B1246C92A2009C52C7 /* CornerRotateModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRotateModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,7 @@
 		DA2350532465F57400A82F1B /* ViewLayer */ = {
 			isa = PBXGroup;
 			children = (
+				DA6471C224673D1300DF931B /* ViewModifiers */,
 				DA2350352465F26100A82F1B /* ContentView.swift */,
 				DA23503C2465F26200A82F1B /* LaunchScreen.storyboard */,
 			);
@@ -130,8 +137,18 @@
 			isa = PBXGroup;
 			children = (
 				DA2350322465F26100A82F1B /* ViewsAndModifiersTechniques.xcdatamodeld */,
+				DA6471C824674A4900DF931B /* SleepCalculator.mlmodel */,
 			);
 			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		DA6471C224673D1300DF931B /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				DA6471C324673D9E00DF931B /* BlueTitleStyle.swift */,
+				DAF917B1246C92A2009C52C7 /* CornerRotateModifier.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +253,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA23502F2465F26100A82F1B /* AppDelegate.swift in Sources */,
+				DA6471C424673D9E00DF931B /* BlueTitleStyle.swift in Sources */,
+				DAF917B2246C92A2009C52C7 /* CornerRotateModifier.swift in Sources */,
 				DA2350312465F26100A82F1B /* SceneDelegate.swift in Sources */,
+				DA6471C924674A4900DF931B /* SleepCalculator.mlmodel in Sources */,
 				DA2350362465F26100A82F1B /* ContentView.swift in Sources */,
 				DA2350342465F26100A82F1B /* ViewsAndModifiersTechniques.xcdatamodeld in Sources */,
 			);
