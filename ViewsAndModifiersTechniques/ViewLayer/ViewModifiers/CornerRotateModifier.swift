@@ -26,29 +26,29 @@ extension AnyTransition {
     }
 }
 
-struct test {
-    static var shared = test()
-    var x = true
-}
-
-struct CornerRotateModifier_Previews: PreviewProvider {
-    @State private var isShowingRed = false
+struct PivotPreview: View {
+    @State private var isShowingRed = true
     
-    static var previews: some View {
+    var body: some View {
         VStack {
             Button("Tap Me") {
                 withAnimation {
-                    test.shared.x.toggle()
-                    CornerRotateModifier_Previews.
+                    self.isShowingRed.toggle()
                 }
             }
             
-            if test.shared.x {
+            if isShowingRed {
                 Rectangle()
                     .fill(Color.red)
                     .frame(width: 200, height: 200)
-                    .transition(.asymmetric(insertion: .scale, removal: .opacity))
+                    .transition(.pivot)
             }
         }
+    }
+}
+
+struct CornerRotateModifier_Previews: PreviewProvider {
+    static var previews: some View {
+        PivotPreview()
     }
 }
